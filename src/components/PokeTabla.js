@@ -14,7 +14,7 @@ import {Typography} from "@mui/material";
 
 const columns = [
   {id: "name", label: "Nombre", minWidth: 100},
-  {id: "weight", label: "Peso", minWidth: 100},
+  {id: "url", label: "url", minWidth: 100},
 ];
 
 export default function PokeTabla() {
@@ -55,8 +55,8 @@ export default function PokeTabla() {
 
   return (
     <>
+      <Paper sx={{width: "100%", overflow: "hidden"}} elevation={12}>
       <Typography variant={"h1"}>Poke Mateo API</Typography>
-      <Paper sx={{width: "100%", overflow: "hidden"}}>
         <TableContainer sx={{maxHeight: "75vh"}}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
@@ -102,25 +102,3 @@ export default function PokeTabla() {
     </>
   );
 }
-
-// function RowProducto(row) {
-//     return <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-//         {columns.map((column) => {
-//             const value = row[column.id];
-//             return (
-//                 <TableCell key={column.id} align={column.align}>
-//                     {column.id === 'accion' ?
-//                         <>
-//                             <IconButton><Edit /></IconButton>
-//                             <IconButton><DeleteForever /></IconButton>
-//                         </>
-//                         :
-//                         column.format && typeof value === 'number'
-//                             ? column.format(value)
-//                             : value}
-
-//                 </TableCell>
-//             );
-//         })}
-//     </TableRow>;
-// }
