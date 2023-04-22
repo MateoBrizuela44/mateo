@@ -56,7 +56,7 @@ export default function PokeTabla() {
   return (
     <>
       <Paper sx={{width: "100%", overflow: "hidden"}} elevation={12}>
-      <Typography variant={"h1"}>Poke Mateo API</Typography>
+      <Typography variant={"h1"}>Pokemon - CouchDB API</Typography>
         <TableContainer sx={{maxHeight: "75vh"}}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
